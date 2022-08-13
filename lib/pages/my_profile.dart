@@ -91,51 +91,57 @@ class _MyProfileState extends State<MyProfile> {
                         child: Container(
                                   decoration: BoxDecoration(
                                     shape: BoxShape.rectangle,
-                                  gradient: const LinearGradient(
-                                    begin: Alignment.centerLeft,
-                                    end: Alignment.centerRight,
-                                    stops: [0.0, 1.0],
-                                    colors: [
-                                      (Color(0xFF1B1D2F)),
-                                      Color(0xFF1B1D2F)
-                                    ],
-                                  ),
+                                    color: const Color(0xFF1B1D2F),
                                   borderRadius: BorderRadius.circular(30.0)
                                   ),
-                                  child: Row(
-                                    children: [
-                                      SizedBox(
-                                        width: 40.0,
-                                        height: 40.0,
-                                        child: Card(
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(150.0),
-                                        ),
-                                        child: Container(
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.rectangle,
-                                  gradient: const LinearGradient(
-                                    begin: Alignment.centerLeft,
-                                    end: Alignment.centerRight,
-                                    stops: [0.0, 1.0],
-                                    colors: [
-                                        (Color(0xFFD869FF)),
-                                        Color(0xFFD869FF)
-                                    ],
-                                  ),
-                                  borderRadius: BorderRadius.circular(150.0)
-                                        ),
-                                        child: const Image(
-                                          image: AssetImage('assets/person.png'),
-                                          width: 15.5,
-                                          height: 16.98,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: 19.0),
+                                    child: Row(
+                                      children: [
+                                          SizedBox(
+                                            width: 40.0,
+                                            height: 40.0,
+                                            child: Card(
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius: BorderRadius.circular(150.0),
+                                            ),
+                                            child: Container(
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.rectangle,
+                                      color: const Color(0xFFD869FF),
+                                    borderRadius: BorderRadius.circular(150.0)
+                                            ),
+                                            child: const Image(
+                                              image: AssetImage('assets/person.png'),
+                                              width: 15.5,
+                                              height: 16.98,
+                                              ),
+                                            ),
                                           ),
                                         ),
+                                        Column(
+                                          children: const [
+                                            Text('Account Settings', style: 
+                                              TextStyle(color: Color(0xFFC5D0EC), fontSize: 13.0)),
+                                            Text('Make changes to your account', style: 
+                                              TextStyle(color: Color(0xFF60708F), fontSize: 11.0)),
+                                          ],
+                                        ), const
+                                        Image(
+                                            image: AssetImage('assets/alert.png'),
+                                            width: 15.0,
+                                            height: 14.0,
+                                        ), const Padding(
+                                          padding: EdgeInsets.only(left: 33.0),
+                                          child: Image(
+                                              image: AssetImage('assets/right_arrow.png'),
+                                              width: 7.0,
+                                              height: 12.0,
+                                            ),
                                         ),
-                                      ),
-                                      
-                                      ]
-                                      ),
+                                        ]
+                                        ),
+                                  ),
                                       ),
                                   ),
                       ),
