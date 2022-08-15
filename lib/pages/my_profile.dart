@@ -83,7 +83,7 @@ class _MyProfileState extends State<MyProfile> {
                     padding: const EdgeInsets.only(top: 16.0),
                     child: SizedBox(
                       width: 347.0,
-                      height: 523.0,
+                      height: 490.0,
                       child: Card(
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0),
@@ -333,7 +333,7 @@ class _MyProfileState extends State<MyProfile> {
                                   ),
                                   Column(
                                     children: const [
-                                      Padding(padding: EdgeInsets.only(right: 8.0, bottom: 5.0),
+                                      Padding(padding: EdgeInsets.only(right: 30.0, bottom: 5.0),
                                       child: Text('Log out', style: 
                                         TextStyle(color: Color(0xFFC5D0EC), fontSize: 13.0)),
                                       ),
@@ -350,7 +350,104 @@ class _MyProfileState extends State<MyProfile> {
                                     ),
                                 ],
                               ),
-                            )
+                            ), const
+                            Padding(
+                              padding: EdgeInsets.only(top: 20.0, left: 16.0),
+                              child: Text('More', style: 
+                                TextStyle(color: Color(0xFFFFFFFF), fontSize: 18.0, fontWeight: FontWeight.w400)),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.only(top: 20.0),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 16.0, left: 16.0),
+                                    child: SizedBox(
+                                      width: 40.0,
+                                      height: 40.0,
+                                      child: Card(
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(150.0),
+                                        ),
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.rectangle,
+                                            color: const Color(0xFF60708F),
+                                            borderRadius: BorderRadius.circular(150.0),
+                                          ),
+                                          child: const Image(
+                                                image: AssetImage('assets/light.png'),
+                                                width: 15.0,
+                                                height: 20.0,
+                                                ),
+                                        ),
+                                    ),
+                                    ),
+                                  ),
+                                  Column(
+                                      children: const [
+                                        Padding(padding: EdgeInsets.only(right: 30.0),
+                                        child: Text('Help & Support', style: 
+                                          TextStyle(color: Color(0xFFC5D0EC), fontSize: 13.0)),
+                                        ),
+                                      ],
+                                    ), const
+                                    Padding(padding: EdgeInsets.only(left: 122.5),
+                                    child: Image(
+                                      image: AssetImage('assets/right_arrow.png'),
+                                      width: 7.0,
+                                      height: 12.0,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.only(top: 20.0),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 16.0, left: 16.0),
+                                    child: SizedBox(
+                                      width: 40.0,
+                                      height: 40.0,
+                                      child: Card(
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(150.0),
+                                        ),
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.rectangle,
+                                            color: const Color(0xFF60708F),
+                                            borderRadius: BorderRadius.circular(150.0),
+                                          ),
+                                          child: const Image(
+                                                image: AssetImage('assets/favorite.png'),
+                                                width: 17.0,
+                                                height: 14.0,
+                                                ),
+                                        ),
+                                    ),
+                                    ),
+                                  ),
+                                  Column(
+                                      children: const [
+                                        Padding(padding: EdgeInsets.only(right: 30.0),
+                                        child: Text('About App', style: 
+                                          TextStyle(color: Color(0xFFC5D0EC), fontSize: 13.0)),
+                                        ),
+                                      ],
+                                    ), const
+                                    Padding(padding: EdgeInsets.only(left: 151.0),
+                                    child: Image(
+                                      image: AssetImage('assets/right_arrow.png'),
+                                      width: 7.0,
+                                      height: 12.0,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ),
                           ]
                         )
                         )
