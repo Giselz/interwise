@@ -158,6 +158,198 @@ class _MyProfileState extends State<MyProfile> {
                                   ),
                                 )
                               ]
+                            ),
+                            Container(
+                              padding: const EdgeInsets.only(top: 20.0),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 16.0, left: 16.0),
+                                    child: SizedBox(
+                                      width: 40.0,
+                                      height: 40.0,
+                                      child: Card(
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(150.0),
+                                        ),
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.rectangle,
+                                            color: const Color(0xFFD869FF),
+                                            borderRadius: BorderRadius.circular(150.0),
+                                          ),
+                                          child: const Image(
+                                                image: AssetImage('assets/bell.png'),
+                                                width: 18.0,
+                                                height: 19.0,
+                                                ),
+                                        ),
+                                      ),
+                                    ),
+                                    ),
+                                    Column(
+                                      children: const [
+                                        Padding(padding: EdgeInsets.only(right: 16.0, bottom: 5.0),
+                                        child: Text('Notification Settings', style: 
+                                          TextStyle(color: Color(0xFFC5D0EC), fontSize: 13.0)),
+                                        ),
+                                        Text('Manage your notifications', style: 
+                                          TextStyle(color: Color(0xFF60708F), fontSize: 11.0)),
+                                      ],
+                                    ), const
+                                    Padding(padding: EdgeInsets.only(left: 109.0),
+                                    child: Image(
+                                      image: AssetImage('assets/right_arrow.png'),
+                                      width: 7.0,
+                                      height: 12.0,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.only(top: 20.0),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 16.0, left: 16.0),
+                                    child: SizedBox(
+                                      width: 40.0,
+                                      height: 40.0,
+                                      child: Card(
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(150.0),
+                                        ),
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.rectangle,
+                                            color: const Color(0xFF7569FF),
+                                            borderRadius: BorderRadius.circular(150.0),
+                                          ),
+                                          child: const Image(
+                                                image: AssetImage('assets/padlock.png'),
+                                                width: 15.0,
+                                                height: 19.0,
+                                                ),
+                                        ),
+                                    ),
+                                    ),
+                                  ),
+                                  Column(
+                                      children: const [
+                                        Padding(padding: EdgeInsets.only(right: 30.0, bottom: 5.0),
+                                        child: Text('Face ID / Touch ID', style: 
+                                          TextStyle(color: Color(0xFFC5D0EC), fontSize: 13.0)),
+                                        ),
+                                        Text('Manage your device security', style: 
+                                          TextStyle(color: Color(0xFF60708F), fontSize: 11.0)),
+                                      ],
+                                    ), const
+                                    Padding(padding: EdgeInsets.only(left: 60.0),
+                                    child: Image(
+                                      image: AssetImage('assets/chave.png'),
+                                      width: 51.0,
+                                      height: 30.0,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.only(top: 20.0),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 16.0, left: 16.0),
+                                    child: SizedBox(
+                                      width: 40.0,
+                                      height: 40.0,
+                                      child: Card(
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(150.0),
+                                        ),
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.rectangle,
+                                            color: const Color(0xFF7569FF),
+                                            borderRadius: BorderRadius.circular(150.0),
+                                          ),
+                                          child: const Image(
+                                                image: AssetImage('assets/padlock.png'),
+                                                width: 15.0,
+                                                height: 19.0,
+                                                ),
+                                        ),
+                                    ),
+                                    ),
+                                  ),
+                                  Column(
+                                      children: const [
+                                        Padding(padding: EdgeInsets.only(right: 30.0, bottom: 5.0),
+                                        child: Text('Two-Factor Authentication', style: 
+                                          TextStyle(color: Color(0xFFC5D0EC), fontSize: 13.0)),
+                                        ),
+                                        Text('Further secure your account for safety', style: 
+                                          TextStyle(color: Color(0xFF60708F), fontSize: 11.0)),
+                                      ],
+                                    ), const
+                                    Padding(padding: EdgeInsets.only(left: 55.5),
+                                    child: Image(
+                                      image: AssetImage('assets/right_arrow.png'),
+                                      width: 7.0,
+                                      height: 12.0,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.only(top: 20.0),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 16.0, left: 16.0),
+                                    child: SizedBox(
+                                      width: 40.0,
+                                      height: 40.0,
+                                      child: Card(
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(150.0),
+                                        ),
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.rectangle,
+                                            color: const Color(0xFF60708F),
+                                            borderRadius: BorderRadius.circular(150.0),
+                                          ),
+                                          child: const Image(
+                                                image: AssetImage('assets/log_out.png'),
+                                                width: 8.0,
+                                                height: 8.0,
+                                                ),
+                                    ),
+                                    ),
+                                  ),
+                                  ),
+                                  Column(
+                                    children: const [
+                                      Padding(padding: EdgeInsets.only(right: 8.0, bottom: 5.0),
+                                      child: Text('Log out', style: 
+                                        TextStyle(color: Color(0xFFC5D0EC), fontSize: 13.0)),
+                                      ),
+                                      Text('Further secure your account for safety', style: 
+                                        TextStyle(color: Color(0xFF60708F), fontSize: 11.0)),
+                                    ],
+                                  ),const
+                                    Padding(padding: EdgeInsets.only(left: 55.5),
+                                    child: Image(
+                                      image: AssetImage('assets/right_arrow.png'),
+                                      width: 7.0,
+                                      height: 12.0,
+                                      ),
+                                    ),
+                                ],
+                              ),
                             )
                           ]
                         )
@@ -165,7 +357,6 @@ class _MyProfileState extends State<MyProfile> {
                       )
                     )
                   ),
-                  
                 ]
                 )
                 ]
