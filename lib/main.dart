@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:interwise/pages/my_profile.dart';
 import 'package:interwise/pages/palette.dart';
+import 'package:interwise/pages/send_money.dart';
 import 'pages/login.dart';
 import 'package:interwise/pages/recipients.dart';
 
@@ -18,11 +19,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Palette.kToDark,
       ),
-      initialRoute: '/my_profile',
+      initialRoute: '/send_money',
       routes: {
         '/' : (_) => const Login(),
         '/recipients' : (_) => const Recipients(),
         '/my_profile' : (_) => const MyProfile(),
+        '/send_money' : (_) => const SendMoney(),
       },
     );
   }

@@ -25,15 +25,18 @@ class _MyProfileState extends State<MyProfile> {
                     padding: const EdgeInsets.all(20.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        Text(
+                      children:  [
+                        const Text(
                           'My Profile',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 24.0,
                               fontWeight: FontWeight.w400),
                         ),
-                        Icon(Icons.home, color: Colors.white)
+                        Image.asset('assets/home.png', 
+                              color: Colors.white,
+                              width: 20.0,
+                              height: 20.0,),
                       ],
                     ),
                   ),
