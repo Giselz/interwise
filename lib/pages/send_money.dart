@@ -195,7 +195,169 @@ class _SendMoneyState extends State<SendMoney> {
                                       ),
                                     ),
                             ],
-                          )
+                          ), const
+                          Padding(
+                            padding: EdgeInsets.only(left: 5.0, top: 20.0, bottom: 20.0),
+                            child:  Text('Choose Payment Method',
+                            style: TextStyle(
+                              color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.w600),
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(left: 30.0, right: 9.0),
+                                child: SizedBox(
+                                  width: 72.0,
+                                  height: 108.0,
+                                  child: Card(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(15.0),
+                                    ),
+                                    child: Container(
+                                                  decoration: BoxDecoration(
+                                                    shape: BoxShape.rectangle,
+                                                    color: const Color(0xFF1B1D2F),
+                                                  borderRadius: BorderRadius.circular(15.0)
+                                                  ),
+                                                  child: const  Image(
+                                                    image: AssetImage('assets/add.png'),
+                                                    width: 63.8,
+                                                    height: 34.0,
+                                                    color: Color(0xFF60708F),
+                                                    ),
+                                                  ),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 9.0),
+                                child: SizedBox(
+                                  width: 72.0,
+                                  height: 108.0,
+                                  child: Card(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(15.0),
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                                    shape: BoxShape.rectangle,
+                                                    color: const Color(0xFF1B1D2F),
+                                                  borderRadius: BorderRadius.circular(15.0)
+                                                  ),
+                                                  child: const Text('Digital Wallet', style: 
+                                                    TextStyle(color: Color(0xFF60708F), fontSize: 12.0)),
+                                                    //Image.asset('assets/wallet_gradient.png'),
+                                                    ),
+                                      ],
+                                                  ),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 9.0),
+                                child: SizedBox(
+                                  width: 72.0,
+                                  height: 108.0,
+                                  child: Card(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(15.0),
+                                    ),
+                                    child: Container(
+                                                  decoration: BoxDecoration(
+                                                    shape: BoxShape.rectangle,
+                                                    color: const Color(0xFF1B1D2F),
+                                                  borderRadius: BorderRadius.circular(15.0)
+                                                  ),
+                                                  child: const  Image(
+                                                    image: AssetImage('assets/mastercard.png'),
+                                                    width: 63.8,
+                                                    height: 34.0,
+                                                    ),
+                                                  ),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 9.0),
+                                child: SizedBox(
+                                  width: 72.0,
+                                  height: 108.0,
+                                  child: Card(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(15.0),
+                                    ),
+                                    child: Container(
+                                                  decoration: BoxDecoration(
+                                                    shape: BoxShape.rectangle,
+                                                    color: const Color(0xFF1B1D2F),
+                                                  borderRadius: BorderRadius.circular(15.0)
+                                                  ),
+                                                  child: const  Image(
+                                                    image: AssetImage('assets/visa.png'),
+                                                    width: 63.8,
+                                                    height: 34.0,
+                                                    ),
+                                                  ),
+                                  ),
+                                ),
+                              ),const
+                                    Padding(padding: EdgeInsets.only(left: 16.0, right: 5.0),
+                                    child: Image(
+                                      image: AssetImage('assets/right_arrow.png'),
+                                      width: 7.0,
+                                      height: 12.0,
+                                      ),
+                                    ),
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0),
+                            child: SizedBox(
+                                width: 428.0,
+                                height: 284.0,
+                                child: Card(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(50.0),
+                                  ),
+                              child: Container(
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.rectangle,
+                                      color: const Color(0xFF1B1D2F),
+                                    borderRadius: BorderRadius.circular(50.0)
+                                    ),
+                              child: ListView(
+                                scrollDirection: Axis.vertical,
+                                children: [
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.only(top: 10.0),
+                                      child: Row(
+                                        children: const [
+                                          Padding(
+                                            padding: EdgeInsets.only(left: 40.0, top: 10.0),
+                                            child: Text('Summary', style: 
+                                              TextStyle(color: Colors.white, fontSize: 18.0),)
+                                          ),
+                                          Text('Debit card free', style: 
+                                            TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
+                                            ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                  ),
+                                ],
+                              ),
+                        ),
+                      ),
+                    ),
+                          ),
                       ],
                     )
                   ],
