@@ -332,26 +332,94 @@ class _SendMoneyState extends State<SendMoney> {
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Container(
-                                      padding: const EdgeInsets.only(top: 10.0),
-                                      child: Row(
-                                        children: const [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 40.0, top: 10.0),
+                                          const Padding(
+                                            padding: EdgeInsets.only(left: 5.0, top: 10.0),
                                             child: Text('Summary', style: 
                                               TextStyle(color: Colors.white, fontSize: 18.0),)
                                           ),
-                                          Text('Debit card free', style: 
-                                            TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
+                                          Row(
+                                            children: const [
+                                              Padding(
+                                                padding: EdgeInsets.only(left: 30.0, top: 7.0),
+                                                child: Text('Debit card free', style: 
+                                                  TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.only(left: 180.0, top: 7.0),
+                                                child: Text('1.21 USD', style: 
+                                                  TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
                                             ),
+                                              ),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: const [
+                                              Padding(
+                                                padding: EdgeInsets.only(left: 30.0, top: 7.0),
+                                                child: Text('Our free', style: 
+                                                  TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.only(left: 218.0, top: 7.0),
+                                                child: Text('0.95 USD', style: 
+                                                  TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
+                                            ),
+                                              ),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: const [
+                                              Padding(
+                                                padding: EdgeInsets.only(left: 30.0, top: 7.0),
+                                                child: Text('We convert', style: 
+                                                  TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.only(left: 200.0, top: 7.0),
+                                                child: Text('97.84 USD', style: 
+                                                  TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
+                                            ),
+                                              ),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: const [
+                                              Padding(
+                                                padding: EdgeInsets.only(left: 30.0, top: 7.0),
+                                                child: Text('Guarenteed Rate (8 hours)', style: 
+                                                  TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.only(left: 119.0, top: 7.0),
+                                                child: Text('0.916150', style: 
+                                                  TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
+                                            ),
+                                              ),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: const [
+                                              Padding(
+                                                padding: EdgeInsets.only(left: 30.0, top: 7.0),
+                                                child: Text('Recipient gets', style: 
+                                                  TextStyle(color: Color(0xFF82F080), fontSize: 16.0),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.only(left: 160.0, top: 7.0),
+                                                child: Text('89.64 EUR', style: 
+                                                  TextStyle(color: Color(0xFF82F080), fontSize: 16.0),
+                                            ),
+                                              ),
+                                            ],
+                                          ),
                                         ],
                                       ),
-                                    ),
-                                  ],
-                                  ),
                                 ],
                               ),
                         ),
