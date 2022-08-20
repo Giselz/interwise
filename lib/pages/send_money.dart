@@ -60,6 +60,79 @@ class _SendMoneyState extends State<SendMoney> {
                                     color: const Color(0xFF1B1D2F),
                                   borderRadius: BorderRadius.circular(15.0)
                                   ),
+                            child: ListView(
+                              scrollDirection: Axis.vertical,
+                              children: [
+                                Column(
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.only(top: 8.0),
+                                      child: Row(
+                                        children:  const [
+                                          Padding(
+                                            padding: EdgeInsets.only(left: 18.0),
+                                            child: Text('Currency Calculator', 
+                                              style: TextStyle(color: Colors.white, fontSize: 18.0, fontWeight: FontWeight.w500),
+                                            ),
+                                          ),
+                                          ],
+                                          
+                                      )
+                                      ),
+                                      Column(
+                                            children: const [
+                                              Padding(
+                                                padding: EdgeInsets.only(right: 250.0, top: 15.0),
+                                                child: Text('You send', style: TextStyle(color: Colors.white, fontSize: 12.0, fontWeight: FontWeight.w400)),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.only(right: 240.0, top: 5.0),
+                                                child: Text('100', style: TextStyle(color: Colors.white, fontSize: 36.0)),
+                                              )
+                                            ],
+                                          ),
+                                    Padding(
+                                            padding: const EdgeInsets.only(left: 30.0, top: 5.0),
+                                            child: SizedBox(
+                                            width: 123.0,
+                                            height: 43.0,
+                                              child: Card(
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius: BorderRadius.circular(12.0),
+                                                  side: const BorderSide(color: Color(0xFF7569FF))
+                                                  ),          
+                                                child: Container(
+                                                      decoration: BoxDecoration(
+                                                        shape: BoxShape.rectangle,
+                                                        color: const Color(0xFF33364D),
+                                                      borderRadius: BorderRadius.circular(12.0)
+                                                      ),
+                                                      child: Row(
+                                                        children: const [
+                                                          Padding(
+                                                            padding: EdgeInsets.only(left: 15.0, right: 10.0),
+                                                            child: Image(
+                                                              image: AssetImage('assets/USA.png'),
+                                                              width: 16.0,
+                                                              height: 12.0,
+                                                              ),
+                                                          ),
+                                                          Padding(
+                                                            padding: EdgeInsets.only(right: 10.0),
+                                                            child: Text('USD', style: TextStyle(color: Colors.white, fontSize: 18.0)),
+                                                          ),
+                                                          Icon(Icons.keyboard_arrow_down, color: Color(0xFF7569FF) ,size: 20.0,)
+                                                        ],
+                                                      )
+                                                      
+                                                ),
+                                              ),
+                                            ),
+                                          )
+                                  ],
+                                )
+                              ],
+                            ),
                         ),
                       ),
                     ),const
@@ -134,10 +207,9 @@ class _SendMoneyState extends State<SendMoney> {
                                                     color: const Color(0xFF1B1D2F),
                                                   borderRadius: BorderRadius.circular(15.0)
                                                   ),
-                                                  child: const  Image(
-                                                    image: AssetImage('assets/joseph_weish.png'),
-                                                    width: 53.0,
-                                                    height: 53.0,
+                                                    child: FittedBox(
+                                                      child: Image.asset('assets/joseph_weish_.png'),
+                                                      fit: BoxFit.fill,
                                                     ),
                                                   ),
                                                   ),
@@ -158,8 +230,9 @@ class _SendMoneyState extends State<SendMoney> {
                                                     color: const Color(0xFF1B1D2F),
                                                   borderRadius: BorderRadius.circular(15.0)
                                                   ),
-                                                  child: const  Image(
-                                                    image: AssetImage('assets/woman_one.png')
+                                                  child: FittedBox(
+                                                      child: Image.asset('assets/woman_one.png'),
+                                                      fit: BoxFit.fill,
                                                     ),
                                                   ),
                                                   ),
@@ -180,8 +253,9 @@ class _SendMoneyState extends State<SendMoney> {
                                                     color: const Color(0xFF1B1D2F),
                                                   borderRadius: BorderRadius.circular(15.0)
                                                   ),
-                                                  child: const  Image(
-                                                    image: AssetImage('assets/woman_two.png')
+                                                  child: FittedBox(
+                                                      child: Image.asset('assets/woman_two.png'),
+                                                      fit: BoxFit.fill,
                                                     ),
                                                   ),
                                                   ),
