@@ -424,7 +424,7 @@ class _HomePageState extends State<HomePage> {
                                             child: Row(
                                               children: const [
                                                 Padding(
-                                                  padding: EdgeInsets.only(left: 40.0, right: 120.0),
+                                                  padding: EdgeInsets.only(left: 40.0, right: 120.0, bottom: 10.0),
                                                   child: Text('Recent Transactions', style: 
                                                     TextStyle(color: Colors.white, fontSize: 18.0),),
                                                 ),
@@ -434,6 +434,153 @@ class _HomePageState extends State<HomePage> {
                                                 )
                                               ],
                                             )
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.only(right: 30.0, left: 30.0),
+                                            child: Column(
+                                              children :[
+                                                Row(
+                                                  children: [
+                                                    const Image(image: AssetImage('assets/joseph.png'),
+                                                    width: 53.0,
+                                                    height: 53.0,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.only(right: 80.0, left: 15.0, bottom: 2.0),
+                                                      child: Column(
+                                                        children : const [
+                                                          Text('Joseph Weiss', 
+                                                          style: TextStyle(color: Color(0xFF60708F),
+                                                          fontSize: 15.0),
+                                                          ),
+                                                          Padding(
+                                                            padding: EdgeInsets.only(left: 6.0),
+                                                            child: Text('05 June - 09:05', 
+                                                            style: TextStyle(color: Color(0xFFB1BED8),
+                                                            fontSize: 15.0),
+                                                            ),
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ), const Text('- \$ 550.00', 
+                                                        style: TextStyle(color: Color(0xFFEB789C),
+                                                        fontSize: 15.0),
+                                                        ),
+                                                  ],
+                                                )
+                                              ]
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.only(top: 20.0, right: 30.0, left: 30.0),
+                                            child: Column(
+                                              children :[
+                                                Row(
+                                                  children:  [
+                                                    const Image(image: AssetImage('assets/woman_one.png'),
+                                                    width: 53.0,
+                                                    height: 53.0,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.only(right: 61.0, left: 15.0, bottom: 2.0),
+                                                      child: Column(
+                                                        children : const [
+                                                          Padding(
+                                                            padding: EdgeInsets.only(left: 7.0),
+                                                            child: Text('Ester Greenbaum', 
+                                                            style: TextStyle(color: Color(0xFF60708F),
+                                                            fontSize: 15.0),
+                                                            ),
+                                                          ),
+                                                          Text('03 June - 16:10', 
+                                                          style: TextStyle(color: Color(0xFFB1BED8),
+                                                          fontSize: 15.0),
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ),const Text('+ \$ 200.00', 
+                                                        style: TextStyle(color: Color(0xFF82F080),
+                                                        fontSize: 15.0),
+                                                        ),
+                                                  ],
+                                                )
+                                              ]
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.only(top: 20.0, right: 30.0, left: 30.0),
+                                            child: Column(
+                                              children :[
+                                                Row(
+                                                  children: [
+                                                    const Image(image: AssetImage('assets/woman_two.png'),
+                                                    width: 53.0,
+                                                    height: 53.0,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.only(right: 80.0, left: 15.0, bottom: 2.0),
+                                                      child: Column(
+                                                        children : const [
+                                                          Padding(
+                                                            padding: EdgeInsets.only(left: 6.0),
+                                                            child: Text('Lina Fernandez', 
+                                                            style: TextStyle(color: Color(0xFF60708F),
+                                                            fontSize: 15.0),
+                                                            ),
+                                                          ),
+                                                          Padding(
+                                                            padding: EdgeInsets.only(left: 5.0),
+                                                            child: Text('16 May - 21:01', 
+                                                            style: TextStyle(color: Color(0xFFB1BED8),
+                                                            fontSize: 15.0),
+                                                            ),
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ),const Text('- \$ 700.00', 
+                                                        style: TextStyle(color: Color(0xFFEB789C),
+                                                        fontSize: 15.0),
+                                                        ),
+                                                  ],
+                                                )
+                                              ]
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.only(top: 20.0, right: 30.0, left: 30.0),
+                                            child: Column(
+                                              children :[
+                                                Row(
+                                                  children: [
+                                                    const Image(image: AssetImage('assets/joseph_weish_.png'),
+                                                    width: 53.0,
+                                                    height: 53.0,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.only(right: 75.0, left: 15.0, bottom: 2.0),
+                                                      child: Column(
+                                                        children : const [
+                                                          Text('Arnold Weiss', 
+                                                          style: TextStyle(color: Color(0xFF60708F),
+                                                          fontSize: 15.0),
+                                                          ),
+                                                          Padding(
+                                                            padding: EdgeInsets.only(left: 5.0),
+                                                            child: Text('01 May - 12:22', 
+                                                            style: TextStyle(color: Color(0xFFB1BED8),
+                                                            fontSize: 15.0),
+                                                            ),
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ),const Text('- \$ 2000.00', 
+                                                        style: TextStyle(color: Color(0xFF82F080),
+                                                        fontSize: 15.0),
+                                                        ),
+                                                  ],
+                                                )
+                                              ]
+                                            ),
                                           ),
                                         ],
                                       ),
