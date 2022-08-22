@@ -424,7 +424,7 @@ class _HomePageState extends State<HomePage> {
                                             child: Row(
                                               children: const [
                                                 Padding(
-                                                  padding: EdgeInsets.only(left: 40.0, right: 120.0, bottom: 10.0),
+                                                  padding: EdgeInsets.only(left: 40.0, right: 120.0, bottom: 15.0),
                                                   child: Text('Recent Transactions', style: 
                                                     TextStyle(color: Colors.white, fontSize: 18.0),),
                                                 ),
@@ -436,7 +436,7 @@ class _HomePageState extends State<HomePage> {
                                             )
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(right: 30.0, left: 30.0),
+                                            padding: const EdgeInsets.only(right: 30.0, left: 30.0, top: 10.0),
                                             child: Column(
                                               children :[
                                                 Row(
@@ -582,6 +582,58 @@ class _HomePageState extends State<HomePage> {
                                               ]
                                             ),
                                           ),
+                                          Padding(
+                                            padding: const EdgeInsets.only(top: 20.0, right: 30.0, left: 30.0),
+                                            child: Column(
+                                              children :[
+                                                Row(
+                                                  children: [
+                                                    const Image(image: AssetImage('assets/joseph_weish_.png'),
+                                                    width: 53.0,
+                                                    height: 53.0,
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.only(right: 75.0, left: 15.0, bottom: 2.0),
+                                                      child: Column(
+                                                        children : const [
+                                                          Text('Arnold Weiss', 
+                                                          style: TextStyle(color: Color(0xFF60708F),
+                                                          fontSize: 15.0),
+                                                          ),
+                                                          Padding(
+                                                            padding: EdgeInsets.only(left: 5.0),
+                                                            child: Text('15 April - 11:02', 
+                                                            style: TextStyle(color: Color(0xFFB1BED8),
+                                                            fontSize: 15.0),
+                                                            ),
+                                                          ),
+                                                        ]
+                                                      ),
+                                                    ),const Text('- \$ 1100.00', 
+                                                        style: TextStyle(color: Color(0xFFEB789C),
+                                                        fontSize: 15.0),
+                                                        ),
+                                                  ],
+                                                )
+                                              ]
+                                            ),
+                                          ),
+                                          Row(
+                                            children: const [
+                                              Padding(
+                                                padding: EdgeInsets.only(top: 15.0, left: 160.0, right: 10.0, bottom: 20.0),
+                                                child: Text('See More', style: 
+                                                TextStyle(color: Colors.white,
+                                                fontSize: 14.0),
+                                                ),
+                                              ),
+                                              Icon(
+                                                Icons.arrow_drop_down,
+                                                color: Color(0xFFC5D0EC),
+                                                size: 20.0,
+                                              ),
+                                            ]
+                                          )
                                         ],
                                       ),
                                 ],

@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Palette.kToDark,
       ),
-      initialRoute: '/send_money',
+      initialRoute: '/home',
       routes: {
         '/' : (_) => const Login(),
         '/recipients' : (_) => const Recipients(),
