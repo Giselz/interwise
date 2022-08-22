@@ -523,20 +523,20 @@ class _SendMoneyState extends State<SendMoney> {
                                   Column(
                                   children: [
                                           const Padding(
-                                            padding: EdgeInsets.only(right: 220.0, top: 12.0, bottom: 8.0),
+                                            padding: EdgeInsets.only(right: 220.0, top: 22.0, bottom: 8.0),
                                             child: Text('Summary', style: 
                                               TextStyle(color: Colors.white, fontSize: 18.0),)
                                           ),
                                           Row(
                                             children: const [
                                               Padding(
-                                                padding: EdgeInsets.only(left: 30.0, top: 7.0),
+                                                padding: EdgeInsets.only(left: 30.0, top: 12.0),
                                                 child: Text('Debit card free', style: 
                                                   TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.only(left: 180.0, top: 7.0),
+                                                padding: EdgeInsets.only(left: 180.0, top: 12.0),
                                                 child: Text('1.21 USD', style: 
                                                   TextStyle(color: Color(0xFFC5D0EC), fontSize: 12.0),
                                             ),
@@ -594,19 +594,71 @@ class _SendMoneyState extends State<SendMoney> {
                                           Row(
                                             children: const [
                                               Padding(
-                                                padding: EdgeInsets.only(left: 30.0, top: 7.0),
+                                                padding: EdgeInsets.only(left: 30.0, top: 7.0, bottom: 15.0),
                                                 child: Text('Recipient gets', style: 
                                                   TextStyle(color: Color(0xFF82F080), fontSize: 16.0),
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsets.only(left: 138.0, top: 7.0),
+                                                padding: EdgeInsets.only(left: 138.0, top: 7.0, bottom: 15.0),
                                                 child: Text('89.64 EUR', style: 
                                                   TextStyle(color: Color(0xFF82F080), fontSize: 16.0),
                                             ),
                                               ),
                                             ],
                                           ),
+                                          Padding(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 10.0, horizontal: 70.0),
+                          child: DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                  begin: Alignment.centerLeft,
+                                  end: Alignment.centerRight,
+                                  stops: [0.0, 1.0],
+                                  colors: [
+                                    Color(0xFF7569FF),
+                                    Color(0xFFD869FF)
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(15.0),
+                              ),
+                              child: ElevatedButton(
+                                style: ButtonStyle(
+                                  shape: MaterialStateProperty.all<
+                                      RoundedRectangleBorder>(
+                                    RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20.0),
+                                    ),
+                                  ),
+                                  backgroundColor: MaterialStateProperty.all(
+                                      Colors.transparent),
+                                ),
+                                onPressed: () {},
+                                child: SizedBox(
+                                  width: double.maxFinite,
+                                  height: 60.0,
+                                  child: Row(
+                                    children: const [
+                                      Padding(
+                                        padding: EdgeInsets.only(left: 50.0, right: 13.0),
+                                        child: Image(image: AssetImage('assets/arrow.png'),
+                                        width: 32.0,
+                                        height: 25.0,
+                                        ),
+                                      ),
+                                      Text(
+                                      'Send',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20.0,
+                                      ),
+                                    ),
+                                    ],
+                                  ),
+                                ),
+                              )),
+                        ),
                                         ],
                                       ),
                                 ],
