@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interwise/pages/digital_wallet.dart';
 import 'package:interwise/pages/home.dart';
 import 'package:interwise/pages/my_profile.dart';
 import 'package:interwise/pages/palette.dart';
@@ -20,13 +21,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Palette.kToDark,
       ),
-      initialRoute: '/send_money',
+      initialRoute: '/digital_wallet',
       routes: {
         '/' : (_) => const Login(),
         '/recipients' : (_) => const Recipients(),
         '/my_profile' : (_) => const MyProfile(),
         '/send_money' : (_) => const SendMoney(),
         '/home' : (_) => const HomePage(),
+        '/digital_wallet' : (_) => const PageDigitalWallet(),
       },
     );
   }
