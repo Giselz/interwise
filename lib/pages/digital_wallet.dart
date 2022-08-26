@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class PageDigitalWallet extends StatelessWidget {
@@ -34,7 +32,7 @@ class PageDigitalWallet extends StatelessWidget {
                                 ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 90.0, bottom: 11.0),
+                                  padding: const EdgeInsets.only(left: 130.0, bottom: 11.0),
                                   child: Row(
                                     children: [
                                       Image.asset('assets/wallet_digital.png',
@@ -42,10 +40,13 @@ class PageDigitalWallet extends StatelessWidget {
                                         width: 20.0,
                                         height: 20.0,
                                       ),
-                                      Image.asset('assets/add.png', 
-                                        color: Colors.white,
-                                        width: 20.0,
-                                        height: 20.0,
+                                      Padding(
+                                        padding: const EdgeInsets.only(bottom: 20.0),
+                                        child: Image.asset('assets/add.png', 
+                                          color: Colors.white,
+                                          width: 10.0,
+                                          height: 10.0,
+                                        ),
                                       )
                                     ],
                                   )
@@ -107,21 +108,29 @@ class PageDigitalWallet extends StatelessWidget {
                                                           width: 45.0,
                                                           height: 36.0,
                                                         ),
-                                                        Padding(
-                                                          padding: const EdgeInsets.only(top: 70.0, right: 60.0),
-                                                          child: Text('5282 3456 7890 1289', 
-                                                            style: TextStyle(fontSize: 14.0),),
-                                                        ),
-                                                        Text('09/25', style: TextStyle(fontSize: 14.0),)
+                                                        
                                                       ],
                                                     ),
+                                                  ),
+                                                  Row(
+                                                    children: const [
+                                                      Padding(
+                                                          padding: EdgeInsets.only(left: 40.0, top: 30.0, right: 60.0),
+                                                          child: Text('5282 3456 7890 1289', 
+                                                            style: TextStyle(fontSize: 14.0, color: Colors.white),),
+                                                        ),
+                                                      Padding(
+                                                        padding: EdgeInsets.only(top: 30.0),
+                                                        child: Text('09/25', style: TextStyle(fontSize: 14.0, color: Colors.white),),
+                                                      )
+                                                    ],
                                                   )
                                                 ],
                                               ),
                                           ),
                                         ),
                                       ),
-                                      Padding(padding: EdgeInsets.only(left: 20.0, right: 10.0),
+                                      const Padding(padding: EdgeInsets.only(left: 20.0, right: 10.0),
                                         child: Image(
                                           image: AssetImage('assets/right_arrow.png'),
                                           width: 7.0,
