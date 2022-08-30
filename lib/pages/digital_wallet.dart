@@ -139,7 +139,164 @@ class PageDigitalWallet extends StatelessWidget {
                                           ),
                                       ),
                                     ],
-                                  )
+                                  ),
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Padding(
+                            padding: const EdgeInsets.only(top: 10.0, left: 40.0, right: 10.0),
+                            child: SizedBox(
+                              width: 149.0,
+                              height: 65.0,
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15.0),
+                                  ),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.rectangle,
+                                      gradient: const LinearGradient(
+                                        begin: Alignment.bottomLeft,
+                                        end: Alignment.center,
+                                        stops: [0.001, 1.0],
+                                        colors: [Color(0xFF347BDE), Color(0xFF1AD3A5)],
+                                      ),
+                                      borderRadius: BorderRadius.circular(15.0)
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 10.0, bottom: 2.0, right: 10.0),
+                                              child: Image.asset('assets/up_arrow.png',
+                                                width: 20.0,
+                                                ),
+                                            ),
+                                            Column(
+                                              children: const [
+                                                Padding(
+                                                  padding: EdgeInsets.only(left: 10.0, bottom: 2.0, right: 40.0),
+                                                  child: Text('Income', 
+                                                    style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 10.0)),
+                                                ),
+                                                Text('\$ 5.455.21', 
+                                                  style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 18.0)),
+                                          ],
+                                        )
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 6.0, left: 40.0, right: 10.0, bottom: 15.0),
+                            child: SizedBox(
+                              width: 149.0,
+                              height: 65.0,
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15.0),
+                                  ),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.rectangle,
+                                      gradient: const LinearGradient(
+                                        begin: Alignment.bottomLeft,
+                                        end: Alignment.center,
+                                        stops: [0.001, 1.0],
+                                        colors: [Color(0xFFEF6D5E), Color(0xFFF8BC6B)],
+                                      ),
+                                      borderRadius: BorderRadius.circular(15.0)
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 10.0, bottom: 2.0, right: 10.0),
+                                              child: Image.asset('assets/down_arrow.png',
+                                                width: 20.0,
+                                                ),
+                                            ),
+                                            Column(
+                                              children: const [
+                                                Padding(
+                                                  padding: EdgeInsets.only(left: 10.0, bottom: 2.0, right: 40.0),
+                                                  child: Text('Expenses', 
+                                                    style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 10.0)),
+                                                ),
+                                                Text('\$ 8.002.55', 
+                                                  style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 18.0)),
+                                          ],
+                                        ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                              ),
+                            ),
+                          ),
+                                ],
+                              ),
+                              Padding(
+                            padding: const EdgeInsets.only(top: 10.0, right: 5.0, bottom: 15.0),
+                            child: SizedBox(
+                              width: 152.0,
+                              height: 135.0,
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15.0),
+                                  ),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.rectangle,
+                                      gradient: const LinearGradient(
+                                        begin: Alignment.bottomLeft,
+                                        end: Alignment.center,
+                                        stops: [0.001, 1.0],
+                                        colors: [Color(0xFF20B4F2), Color(0xFF723BF4)],
+                                      ),
+                                      borderRadius: BorderRadius.circular(15.0)
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        const Padding(
+                                          padding: EdgeInsets.only(top: 20.0, bottom: 10.0, right: 20.0),
+                                          child: Text('Digital Wallet\nBalance', 
+                                            style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 16.0, fontWeight: FontWeight.w800)),
+                                        ),
+                                        const Text('\$ 16.543.32', 
+                                          style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 24.0)),
+                                          Row(
+                                            children: [
+                                              const Padding(
+                                                padding: EdgeInsets.only(top: 8.0, left: 10.0, bottom: 8.0, right: 5.0),
+                                                child: Text('Withdraw now', 
+                                                  style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 13.0)),
+                                              ),
+                                              Padding(
+                                              padding: const EdgeInsets.only(top: 8.0, left: 10.0, bottom: 8.0, right: 10.0),
+                                                child: Image.asset('assets/right_arrow_digital_wallet.png',
+                                                  width: 20.0,
+                                                  ),
+                                            ),
+                                            ],
+                                          )
+                                      ],
+                                    ),
+                                  ),
+                              ),
+                            ),
+                          ),
+                            ],
+                          )
+                          
                       ],
                     )
                   ],
