@@ -295,8 +295,97 @@ class PageDigitalWallet extends StatelessWidget {
                             ),
                           ),
                             ],
+                          ),
+                          Column(
+                            children: [
+                              const Padding(
+                                padding: EdgeInsets.only(right: 210.0, bottom: 10.0),
+                                child: Text('Analytics', 
+                                  style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 18.0)),
+                              ),
+                              Image.asset('assets/account_card_slider.png'),
+                              Row(
+                                children: const [
+                                  Padding(
+                                    padding: EdgeInsets.only(left: 25.0, right: 75.0, bottom: 13.0),
+                                    child: Text('Day', 
+                                      style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 13.0)),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(right: 75.0 ,bottom: 13.0),
+                                    child: Text('Week', 
+                                      style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 13.0)),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(right: 75.0 ,bottom: 13.0),
+                                    child: Text('Month', 
+                                      style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 13.0)),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(right: 20.0 ,bottom: 13.0),
+                                    child: Text('Year', 
+                                      style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 13.0)),
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  Padding(
+                                padding: const EdgeInsets.only(right: 120.0),
+                                child: Image.asset('assets/card_equacao.png'),
+                              ),
+                                Image.asset('assets/line_equacao.png'),
+                                Image.asset('assets/equacao.png'),
+                                Image.asset('assets/line_card_equacao.png'),
+                                ],
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 14.0),
+                                child: Row(
+                                  children: const [
+                                    Padding(padding: EdgeInsets.only(left: 20.0, bottom: 20.0),
+                                          child: Image(
+                                            image: AssetImage('assets/left_arrow.png'),
+                                            width: 9.5,
+                                            height: 7.0,
+                                            color: Color(0xFF60708F),
+                                            ),
+                                      ),
+                                    Padding(
+                                      padding: EdgeInsets.only(left: 40.0, right: 35.0),
+                                      child: Text('Apr', 
+                                        style: TextStyle(color: Color(0xFF60708F), fontSize: 14.0)),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.only(right: 35.0),
+                                      child: Text('May', 
+                                        style: TextStyle(color: Color(0xFF82F080), fontSize: 13.0)),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.only(right: 35.0),
+                                      child: Text('Jun', 
+                                        style: TextStyle(color: Color(0xFF60708F), fontSize: 14.0)),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.only(right: 35.0),
+                                      child: Text('Jul', 
+                                        style: TextStyle(color:Color(0xFF60708F), fontSize: 14.0)),
+                                    ),
+                                    Text('Aug', 
+                                        style: TextStyle(color: Color(0xFF60708F), fontSize: 14.0)),
+                                    Padding(padding: EdgeInsets.only(left: 20.0, bottom: 20.0),
+                                          child: Image(
+                                            image: AssetImage('assets/right_arrow.png'),
+                                            width: 9.5,
+                                            height: 7.0,
+                                            color: Color(0xFF60708F),
+                                            ),
+                                        ),
+                                  ],
+                                ),
+                              )
+                            ]
                           )
-                          
                       ],
                     )
                   ],
