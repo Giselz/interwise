@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:interwise/pages/widgets/digital_wallet_widgets/card_digital_wallet_balance.dart';
 import 'package:interwise/pages/widgets/digital_wallet_widgets/cards_income_expenses.dart';
 import 'package:interwise/pages/widgets/digital_wallet_widgets/cards_digital_wallet.dart';
+import 'package:interwise/pages/widgets/digital_wallet_widgets/section_timeline_analytics.dart';
+import 'package:interwise/pages/widgets/digital_wallet_widgets/section_month_analytics.dart';
 
 class PageDigitalWallet extends StatelessWidget {
   const PageDigitalWallet({Key? key}) : super(key: key);
@@ -106,6 +109,7 @@ class PageDigitalWallet extends StatelessWidget {
                                   ]),
                             ],
                           ),
+                          const CardBalanceDigitalWallet()
                         ],
                       ),
                       Column(children: [
@@ -117,39 +121,11 @@ class PageDigitalWallet extends StatelessWidget {
                         ),
                         Image.asset('assets/account_card_slider.png'),
                         Row(
-                          children: const [
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: 25.0, right: 75.0, bottom: 13.0),
-                              child: Text('Day',
-                                  style: TextStyle(
-                                      color: Color(0xFFFFFFFF),
-                                      fontSize: 13.0)),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsets.only(right: 75.0, bottom: 13.0),
-                              child: Text('Week',
-                                  style: TextStyle(
-                                      color: Color(0xFFFFFFFF),
-                                      fontSize: 13.0)),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsets.only(right: 75.0, bottom: 13.0),
-                              child: Text('Month',
-                                  style: TextStyle(
-                                      color: Color(0xFFFFFFFF),
-                                      fontSize: 13.0)),
-                            ),
-                            Padding(
-                              padding:
-                                  EdgeInsets.only(right: 20.0, bottom: 13.0),
-                              child: Text('Year',
-                                  style: TextStyle(
-                                      color: Color(0xFFFFFFFF),
-                                      fontSize: 13.0)),
-                            ),
+                          children: [
+                            SectionTimelineAnalytics(title: 'Day'),
+                            SectionTimelineAnalytics(title: 'Week'),
+                            SectionTimelineAnalytics(title: 'Month'),
+                            SectionTimelineAnalytics(title: 'Year'),
                           ],
                         ),
                         Column(
@@ -166,8 +142,8 @@ class PageDigitalWallet extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(bottom: 14.0),
                           child: Row(
-                            children: const [
-                              Padding(
+                            children: [
+                              const Padding(
                                 padding:
                                     EdgeInsets.only(left: 20.0, bottom: 20.0),
                                 child: Image(
@@ -177,40 +153,12 @@ class PageDigitalWallet extends StatelessWidget {
                                   color: Color(0xFF60708F),
                                 ),
                               ),
-                              Padding(
-                                padding:
-                                    EdgeInsets.only(left: 40.0, right: 35.0),
-                                child: Text('Apr',
-                                    style: TextStyle(
-                                        color: Color(0xFF60708F),
-                                        fontSize: 14.0)),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(right: 35.0),
-                                child: Text('May',
-                                    style: TextStyle(
-                                        color: Color(0xFF82F080),
-                                        fontSize: 13.0)),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(right: 35.0),
-                                child: Text('Jun',
-                                    style: TextStyle(
-                                        color: Color(0xFF60708F),
-                                        fontSize: 14.0)),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(right: 35.0),
-                                child: Text('Jul',
-                                    style: TextStyle(
-                                        color: Color(0xFF60708F),
-                                        fontSize: 14.0)),
-                              ),
-                              Text('Aug',
-                                  style: TextStyle(
-                                      color: Color(0xFF60708F),
-                                      fontSize: 14.0)),
-                              Padding(
+                              SectionMonthAnalytics(title: 'Apr', color: const Color(0xFF60708F)),
+                              SectionMonthAnalytics(title: 'May', color: const Color(0xFF82F080)),
+                              SectionMonthAnalytics(title: 'Jun', color: const Color(0xFF60708F)),
+                              SectionMonthAnalytics(title: 'Jul', color: const Color(0xFF60708F)),
+                              SectionMonthAnalytics(title: 'Aug', color: const Color(0xFF60708F)),
+                              const Padding(
                                 padding:
                                     EdgeInsets.only(left: 20.0, bottom: 20.0),
                                 child: Image(
