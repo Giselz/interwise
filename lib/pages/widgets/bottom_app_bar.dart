@@ -14,7 +14,6 @@ class _BottomWidgetState extends State<BottomWidget>{
       opacity: 0,
       child: IconButton(
       icon: Image.asset('assets/arrow.png'), onPressed: () {}),
-      //icon: Icon(Icons.no_cell), onPressed: null),
       );
     return BottomAppBar(
       color: const Color(0xFF1B1D2F),
@@ -24,32 +23,37 @@ class _BottomWidgetState extends State<BottomWidget>{
       ),
       notchMargin: 8,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          IconButton(
-            icon: Image.asset('assets/home.png',
-            width: 27.0,
-            height: 27.0,), onPressed: () {},
+          Padding(
+            padding: const EdgeInsets.only(left: 20.0, right: 15.0),
+            child: IconButton(
+              icon: Image.asset('assets/home.png',
+              width: 25.0,
+              height: 25.0,), onPressed: () {},
+            ),
           ),
           IconButton(
             icon: Image.asset('assets/add_person.png',
-            width: 27.0,
-            height: 27.0,), onPressed: () {},
+            width: 25.0,
+            height: 25.0,), onPressed: () {},
           ),
-          /*buildTabItem(
-            index: 1,
-            icon: const Icon(Icons.account_balance_wallet),
-          ),*/
           placeholder,
-          IconButton(
-            icon: Image.asset('assets/wallet.png',
-            width: 27.0,
-            height: 27.0,), onPressed: () {},
+          Padding(
+            padding: const EdgeInsets.only(left: 80.0, right: 15.0),
+            child: IconButton(
+              icon: Image.asset('assets/wallet.png',
+              width: 25.0,
+              height: 25.0,), onPressed: () {},
+            ),
           ),
-          IconButton(
-            icon: Image.asset('assets/add_person.png',
-            width: 27.0,
-            height: 27.0,), onPressed: () {},
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: IconButton(
+              icon: Image.asset('assets/person.png',
+              color: const Color(0xFF60708F),
+              width: 50.0,
+              height: 50.0,), onPressed: () {},
+            ),
           ),
         ],
       ),

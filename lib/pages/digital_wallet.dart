@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interwise/pages/widgets/bottom_app_bar.dart';
 import 'package:interwise/pages/widgets/digital_wallet_widgets/card_digital_wallet_balance.dart';
 import 'package:interwise/pages/widgets/digital_wallet_widgets/cards_income_expenses.dart';
 import 'package:interwise/pages/widgets/digital_wallet_widgets/cards_digital_wallet.dart';
@@ -179,7 +180,33 @@ class PageDigitalWallet extends StatelessWidget {
             ],
           ),
         ),
-      )),
+      )
+      ),
+      bottomNavigationBar: const BottomWidget(),
+      floatingActionButton: FloatingActionButton(
+        child: Container(
+          width: 60.0,
+          height: 60.0,
+          child: Image.asset('assets/arrow.png',
+            width: 34.0,
+            height: 34.0,
+        ),
+          decoration: const BoxDecoration(
+            shape: BoxShape.circle,
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              stops: [0.0, 1.0],
+              colors: [
+                Color(0xFF7569FF),
+                Color(0xFFD869FF)
+              ],
+            ),
+          ),
+        ),    
+        onPressed: () {},
+      ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
