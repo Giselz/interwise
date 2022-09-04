@@ -29,13 +29,17 @@ class _BottomWidgetState extends State<BottomWidget>{
             child: IconButton(
               icon: Image.asset('assets/home.png',
               width: 25.0,
-              height: 25.0,), onPressed: () {},
+              height: 25.0,), onPressed: () {
+                Navigator.of(context).pushNamed('/home', arguments: 'test');
+              },
             ),
           ),
           IconButton(
             icon: Image.asset('assets/add_person.png',
             width: 25.0,
-            height: 25.0,), onPressed: () {},
+            height: 25.0,), onPressed: () {
+              Navigator.of(context).pushNamed('/recipients', arguments: 'test');
+            },
           ),
           placeholder,
           Padding(
@@ -43,7 +47,9 @@ class _BottomWidgetState extends State<BottomWidget>{
             child: IconButton(
               icon: Image.asset('assets/wallet.png',
               width: 25.0,
-              height: 25.0,), onPressed: () {},
+              height: 25.0,), onPressed: () {
+                Navigator.of(context).pushNamed('/digital_wallet', arguments: 'test');
+              },
             ),
           ),
           Padding(
@@ -52,7 +58,9 @@ class _BottomWidgetState extends State<BottomWidget>{
               icon: Image.asset('assets/person.png',
               color: const Color(0xFF60708F),
               width: 50.0,
-              height: 50.0,), onPressed: () {},
+              height: 50.0,), onPressed: () {
+                Navigator.of(context).pushNamed('/my_profile', arguments: 'test');
+              },
             ),
           ),
         ],

@@ -32,10 +32,13 @@ String text;
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                        child: Image(
-                          image: AssetImage(asset),
+                        child: IconButton(
+                          icon: Image.asset(asset,
                           width: 63.8,
-                          height: 34.0,
+                          height: 34.0,),
+                          onPressed: () {
+                            Navigator.of(context).pushNamed('/recipients', arguments: 'test');
+                          },
                         ),
                       ),
                       Padding(
