@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:interwise/pages/widgets/bottom_app_bar.dart';
+import 'package:interwise/pages/widgets/title_pages.dart';
 
 class MyProfile extends StatefulWidget {
   const MyProfile({Key? key}) : super(key: key);
@@ -22,25 +23,7 @@ class _MyProfileState extends State<MyProfile> {
               Stack(children: <Widget>[
                 Image.asset('assets/background.png'),
                 Column(children: [
-                  Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children:  [
-                        const Text(
-                          'My Profile',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 24.0,
-                              fontWeight: FontWeight.w400),
-                        ),
-                        Image.asset('assets/home.png', 
-                              color: Colors.white,
-                              width: 20.0,
-                              height: 20.0,),
-                      ],
-                    ),
-                  ),
+                  TitlePage(text: 'My Profile', asset: 'assets/home.png',),
                   SizedBox(
                     width: 347.0,
                     height: 89.0,

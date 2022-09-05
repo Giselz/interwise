@@ -9,10 +9,10 @@ String text;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 5.0, top: 8.0),
+      padding: const EdgeInsets.only(right: 5.0, top: 5.0),
       child: Row(children: [
         Padding(
-          padding: const EdgeInsets.only(left: 15.0, top: 8.0),
+          padding: const EdgeInsets.only(left: 15.0, top: 5.0),
           child: SizedBox(
             width: 72.0,
             height: 108.0,
@@ -27,17 +27,17 @@ String text;
                     color: const Color(0xFF1B1D2F),
                     borderRadius: BorderRadius.circular(15.0)),
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 8.0),
+                  padding: const EdgeInsets.only(top: 2.5),
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                        padding: const EdgeInsets.only(top: 2.5, bottom: 8.0),
                         child: IconButton(
                           icon: Image.asset(asset,
-                          width: 63.8,
-                          height: 34.0,),
+                          width: 60.0,
+                          height: 30.0),
                           onPressed: () {
-                            Navigator.of(context).pushNamed('/recipients', arguments: 'test');
+                            Navigator.of(context).pushNamed('/send_money', arguments: '');
                           },
                         ),
                       ),

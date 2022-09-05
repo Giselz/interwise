@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                       Row(
                         children: [
                           CardPage(asset: 'assets/arrow_gradient.png', text: ' Send\nMoney',),
-                          CardPage(asset: 'assets/add_person.png', text: '     Add\nRecipient',),
+                          CardPage(asset: 'assets/add_person.png', text: '    Add\nRecipient',),
                           CardPage(asset: 'assets/wallet.png', text: ' Go to\nWallet',),
                           CardPage(asset: 'assets/person.png', text: '   My\nProfile',),
                         ],

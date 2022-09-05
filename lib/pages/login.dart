@@ -45,7 +45,7 @@ class Login extends StatelessWidget {
                   width: 230.0,
                   height: 35.0,
                   child: ElevatedButton(onPressed: () {
-                    Navigator.of(context).pushNamed('/recipients', arguments: 'test');
+                    Navigator.of(context).pushNamed('/home', arguments: '');
                   }, 
                   child: const Text('Login'), 
                   style: ElevatedButton.styleFrom(primary: const Color(0xFFDC5CF9))),
